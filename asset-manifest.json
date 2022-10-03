@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/the-fruit-place/static/css/main.5a82c0d3.css",
-    "main.js": "/the-fruit-place/static/js/main.298e075b.js",
+    "main.js": "/the-fruit-place/static/js/main.eb0252cb.js",
     "index.html": "/the-fruit-place/index.html",
     "main.5a82c0d3.css.map": "/the-fruit-place/static/css/main.5a82c0d3.css.map",
-    "main.298e075b.js.map": "/the-fruit-place/static/js/main.298e075b.js.map"
+    "main.eb0252cb.js.map": "/the-fruit-place/static/js/main.eb0252cb.js.map"
   },
   "entrypoints": [
     "static/css/main.5a82c0d3.css",
-    "static/js/main.298e075b.js"
+    "static/js/main.eb0252cb.js"
   ]
 }
