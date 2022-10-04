@@ -3,7 +3,7 @@ import Fruits from "./Launches";
 import '../stylesheets/style.css'
 import mic from '../images/mic.png'
 import settings from '../images/settings.png'
-import arrow from '../images/down-arrow.png'
+import arrow from '../images/next-icon.svg'
 import logo from '../images/spacex-logo-png-transparent.png'
 import Launches from "./Launches";
 

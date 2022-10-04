@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch } from 'react-redux';
 import { showDetails } from "../redux/Launches/Launch";
 import { Link } from "react-router-dom";
-import arrow from '../images/down-arrow.png'
+import arrow from '../images/next-icon.svg'
 
 const Launch = (props) => {
     const dispatch = useDispatch();

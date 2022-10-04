@@ -203,7 +203,7 @@ img {
 .arrow {
   width: 20px;
   height: 20px;
-  transform: rotate(0.25turn);
+  transform: rotate(0.50turn);
   padding-top: 10px;
   margin-left: 10px;
 }
@@ -232,7 +232,6 @@ img {
 .home-arrow {
   width: 20px;
   height: 20px;
-  transform: rotate(0.75turn);
   margin-top: 15px;
   margin-right: 10px;
 }

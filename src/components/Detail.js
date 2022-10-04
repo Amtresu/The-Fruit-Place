@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import arrow from '../images/down-arrow.png'
+import arrow from '../images/next-icon.svg'
 import mic from '../images/mic.png'
 import settings from '../images/settings.png'
 
