@@ -4,11 +4,11 @@ import {
     applyMiddleware,
   } from '@reduxjs/toolkit';
   import thunk from 'redux-thunk';
-import fruitReducer from './Fruits/Fruit'
+import launchReducer from './Launches/Launch'
 
 
   const rootReducer = combineReducers({
-    fruit: fruitReducer,
+    launch: launchReducer,
   });
   
   const store = configureStore({ reducer: rootReducer }, applyMiddleware(thunk));

@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render All Components render Header: 
+        <div className="header-div">
+            <header>
+                <div className="header-nav">
+                    <div>
+                        <img src={arrow} alt='back-arrow' className="arrow icon" />
+                    </div>
+                    <div>
+                        <img src={mic} alt="mic" className="mic icon" />
+                        <img src={settings} alt="settings icon" className="settings" />
+                    </div>
+                </div>
+                <div className="logo-div">
+                    <img src={logo} alt="logo"className="logo"/>
+                    <h1>The Launch Place</h1>
+                </div>
+            </header>
+            <div className="">
+                <Launches />
+            </div>
+        </div> 1`] = `
+<div
+  class="header-div"
+>
+  <header>
+    <div
+      class="header-nav"
+    >
+      <div>
+        <img
+          alt="back-arrow"
+          class="arrow icon"
+          src="down-arrow.png"
+        />
+      </div>
+      <div>
+        <img
+          alt="mic"
+          class="mic icon"
+          src="mic.png"
+        />
+        <img
+          alt="settings icon"
+          class="settings"
+          src="settings.png"
+        />
+      </div>
+    </div>
+    <div
+      class="logo-div"
+    >
+      <img
+        alt="logo"
+        class="logo"
+        src="spacex-logo-png-transparent.png"
+      />
+      <h1>
+        The Launch Place
+      </h1>
+    </div>
+  </header>
+  <div
+    class=""
+  >
+    <div>
+      <div
+        class="input-div"
+      >
+        <input
+          placeholder="Search. . ."
+          type="text"
+        />
+      </div>
+      <div
+        class="fruits-div"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Render All Components render Launch: 
+    <div key={id} className="mission-div">
+    <Link
+       id={id}
+       type="button"
+       onClick={showDetails1}
+       to="./Details"
+   ><img src={arrow} alt='back-arrow' className="home-arrow icon" /> </Link>
+   <img src={image} alt='mission patch' className="mission-img"></img>
+   <ul className="mission-list">
+   <li>{name}</li>
+   <li>{year}</li>
+   </ul>
+</div> 1`] = `
+<div
+  class="mission-div"
+>
+  <a
+    href="/Details"
+    type="button"
+  >
+    <img
+      alt="back-arrow"
+      class="home-arrow icon"
+      src="down-arrow.png"
+    />
+     
+  </a>
+  <img
+    alt="mission patch"
+    class="mission-img"
+  />
+  <ul
+    class="mission-list"
+  >
+    <li />
+    <li />
+  </ul>
+</div>
+`;
+
+exports[`Render All Components render Launches: 
+            <div>
+            <div className='input-div'>
+        <input type='text' placeholder='Search. . .' onChange={event => setQuery(event.target.value)} />
+        </div>
+        <div className='fruits-div'>
+            {
+                fruits.filter(launch => {
+                    if (query === '') {
+                        return launch;
+                    } else if (launch.name.toLowerCase().includes(query.toLowerCase())) {
+                        return launch;
+                    }
+                }).map((launch, index) => (
+                    <div className="box" key={index}>
+                        <Launch
+                            key={launch.id}
+                            name={launch.name}
+                            id={launch.id}
+                            year={launch.year}
+                            image = {launch.image}
+
+                        />
+                    </div>
+                ))}
+        </div>
+        </div>
+                )
+) 1`] = `
+<div>
+  <div
+    class="input-div"
+  >
+    <input
+      placeholder="Search. . ."
+      type="text"
+    />
+  </div>
+  <div
+    class="fruits-div"
+  />
+</div>
+`;
+
+exports[`Render All Components render detail: 
+        <div>
+            {launches.map((launch)=> (
+                <LaunchDetail 
+                key={launch.id}
+                name={launch.name}
+                id={launch.id}
+                year={launch.year}
+                upcoming={launch.upcoming}
+                rocket_name = {launch.rocket_name}
+                launch_success = {launch.launch_success}
+                rocket_type = {launch.rocket_type}
+                launch_site = {launch.launch_site}
+                launch_date = {launch.launch_date}
+                image = {launch.image}
+                    />
+            ))}
+        </div> 1`] = `<div />`;

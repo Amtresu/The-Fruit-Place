@@ -1,29 +1,25 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { useEffect } from 'react';
-import { getFruits } from '../redux/Fruits/Fruit';
-import FruitDetail from './Detail';
+import { useSelector } from 'react-redux';
+import LaunchDetail from './Detail';
 
 function Details() {
-    const dispatch = useDispatch()
-    let fruits = useSelector((state) => state.fruit)
-    fruits =fruits.filter(fruit => fruit.toggle)
+    let launches = useSelector((state) => state.launch)
+    launches =launches.filter(launch => launch.toggle)
     return (
         <div>
-            {fruits.map((fruit)=> (
-                <FruitDetail 
-                    key={fruit.id}
-                    name={fruit.name}
-                    id={fruit.id}
-                    protein={fruit.protein}
-                    fat={fruit.fat}
-                    sugar={fruit.sugar}
-                    calories={fruit.calories}
-                    carbohydrates={fruit.carbohydrates}
-                    genus={fruit.genus}
-                    family={fruit.family}
-                    order={fruit.order}
-                    toggle={fruit.toggle}
+            {launches.map((launch)=> (
+                <LaunchDetail 
+                key={launch.id}
+                name={launch.name}
+                id={launch.id}
+                year={launch.year}
+                upcoming={launch.upcoming}
+                rocket_name = {launch.rocket_name}
+                launch_success = {launch.launch_success}
+                rocket_type = {launch.rocket_type}
+                launch_site = {launch.launch_site}
+                launch_date = {launch.launch_date}
+                image = {launch.image}
                     />
             ))}
         </div>
