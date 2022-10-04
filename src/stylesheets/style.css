@@ -203,7 +203,7 @@ img {
 .arrow {
   width: 20px;
   height: 20px;
-  transform: rotate(0.50turn);
+  transform: rotate(0.5turn);
   padding-top: 10px;
   margin-left: 10px;
 }
