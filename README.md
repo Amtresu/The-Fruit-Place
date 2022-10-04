@@ -52,4 +52,4 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-Original design is from Nelson Sakwa on Behance.
+Original design is from [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
